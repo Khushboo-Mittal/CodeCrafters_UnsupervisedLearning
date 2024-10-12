@@ -42,11 +42,11 @@ def load_data_from_mongodb(db, collection_name):
 def perform_hyperparameter_tuning(X_train):
     # Define the grid of hyperparameters to search over
     param_grid = {
-        'n_estimators': [100, 50, 70],  # Number of base estimators in ensemble
-        'max_samples': [0.01, 0.05, 0.025],  # Maximum number of samples to draw from the dataset
-        'max_features':[0.05,0.5,0.7], #Number of Features to draw from dataset to train each base estimator
-        'contamination': [0.01, 0.05, 0.02],  # Proportion of outliers in the sample
-        'bootstrap':  [False,False ] # Whether bootstrap samples are used when building trees
+        'n_estimators': [100, 150, 200],  # Number of base estimators in ensemble
+        'max_samples': [0.2, 0.4, 0.6],  # Maximum number of samples to draw from the dataset
+        'max_features':[0.5,0.75,1.0], #Number of Features to draw from dataset to train each base estimator
+        'contamination': [0.01, 0.05, 0.1],  # Proportion of outliers in the sample
+        'bootstrap': [True, False]  # Whether bootstrap samples are used when building trees
     }
     
     # Initialize an IsolationForest Ensemble
