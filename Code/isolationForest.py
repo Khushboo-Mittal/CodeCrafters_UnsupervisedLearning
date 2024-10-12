@@ -3,7 +3,6 @@
     # Developer details: 
         # Name: Harshita and Prachi
         # Role: Architects
-        # Code ownership rights: Mohini T and Vansh R
     # Version:
         # Version: V 1.0 (20 September 2024)
             # Developers: Harshita and Prachi
