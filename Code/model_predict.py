@@ -89,4 +89,10 @@ def predict_output(transaction_date, transaction_amount, merchant_category, card
                           cardholder_age, cardholder_gender, transaction_description, account_balance, calander_income)
     
     prediction = model.predict(data.values)  # Make a prediction (assume only one prediction is made)
-    return f"Model Prediction: {prediction}"  # Return the prediction
+    str = ""
+    if prediction==-1:
+        str += "It's fradulent"
+    else:
+        str += "It's not fradulent"
+        
+    return f"Model Prediction: {prediction}, thus {str}"  # Return the prediction
