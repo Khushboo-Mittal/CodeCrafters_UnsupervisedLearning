@@ -1,12 +1,11 @@
 # META DATA - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
      # Developer details: 
-        # Name: Harshita and Prachi
+        # Name: Harshita and prachi
         # Role: Architects
-        # Code ownership rights: Mohini T and Vansh R
     # Version:
         # Version: V 1.0 (20 September 2024)
-            # Developers: Harshita and Prachi
+            # Developers: Harshita and prachi
             # Unit test: Pass
             # Integration test: Pass
      
@@ -49,7 +48,7 @@ def split(preprocessed_data):
     # Split the data into train, test, validation, and super validation sets
     X_train, X_temp = train_test_split(X, test_size=0.4, random_state=42)  # 60% train, 40% temp
     X_test, X_temp = train_test_split(X_temp, test_size=0.625, random_state=42)  # 0.625 * 0.4 = 0.25 for test
-    X_val, X_superval= train_test_split(X_temp, test_size=0.5, random_state=42)  # 0.4 * 0.25 = 0.1 for validation and super validation
+    X_val, X_superval= train_test_split(X_temp, test_size=0.5, random_state=42)  # 0.5 * 0.25 = 0.125 for validation and super validation
     return X_train, X_test, X_val, X_superval,   # Return split data
 
 def store_to_mongo(data, db, collection_name): # Store data into MongoDB

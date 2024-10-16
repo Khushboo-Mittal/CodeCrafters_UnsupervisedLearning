@@ -3,7 +3,6 @@
      # Developer details: 
         # Name: Harshita and Prachi
         # Role: Architects
-        # Code ownership rights: Mohini T and Vansh R
     # Version:
         # Version: V 1.0 (20 September 2024)
             # Developers: Harshita and Prachi
@@ -39,10 +38,7 @@ def load_data_from_mongodb(db, collection_name):
 
 def evaluate_test_data(X_test, model,flag):
     # Predict labels for the test set
-    if flag==1:
-        pred = model.fit_predict(X_test)
-    else:
-        pred = model.predict(X_test)
+    pred = model.predict(X_test)
     
     # Calculate accuracy score for the test set
     test_silhouette_avg = silhouette_score(X_test, pred)
@@ -57,10 +53,7 @@ def evaluate_test_data(X_test, model,flag):
 
 def evaluate_validation_data(X_val, model,flag):
     # Predict labels for the validation set
-    if flag==1:
-        val_pred = model.fit_predict(X_val)
-    else:
-        val_pred = model.predict(X_val)
+    val_pred = model.predict(X_val)
     
     # Calculate accuracy score for the validation set
     val_silhouette_avg = silhouette_score(X_val, val_pred)
@@ -75,10 +68,7 @@ def evaluate_validation_data(X_val, model,flag):
 
 def evaluate_supervalidation_data(X_superval, model,flag):
     # Predict labels for the supervalidation set
-    if flag==1:
-        superval_pred = model.fit_predict(X_superval)
-    else:
-        superval_pred = model.predict(X_superval)
+    superval_pred = model.predict(X_superval)
     
     # Calculate accuracy score for the supervalidation set
     superval_silhouette_avg = silhouette_score(X_superval, superval_pred)

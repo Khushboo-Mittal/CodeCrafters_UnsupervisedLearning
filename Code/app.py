@@ -1,12 +1,11 @@
 # META DATA - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
     # Developer details: 
-        # Name: Harshita and Prachi
+        # Name: Harshita, prachi, khushboo, tanisha
         # Role: Architects
-        # Code ownership rights: Mohini T and Vansh R
     # Version:
         # Version: V 1.0 (20 September 2024)
-            # Developers: Harshita and Prachi
+            # Developers: Harshita, prachi, khushboo, tanisha
             # Unit test: Pass
             # Integration test: Pass
      
